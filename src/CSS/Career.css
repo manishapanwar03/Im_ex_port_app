@@ -1,0 +1,16 @@
+.hrOpenings{
+    -webkit-animation: hrAnime 6s infinite;
+    animation: hrAnime 6s infinite;
+    background-color: #ff961d;
+    height: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+@keyframes hrAnime {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
