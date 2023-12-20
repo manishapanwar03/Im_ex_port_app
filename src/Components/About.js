@@ -1,11 +1,21 @@
 import React from "react";
-
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../CSS/About_us.css";
 import Footer from "./Footer";
 import { useEffect } from "react";
-import Aos from "aos";
 import { Link } from "react-router-dom";
+import bgabout from "../Images/bgabout.jpeg";
+import hpgif from "../Images/hpgif.gif";
+import aboutusimage from "../Images/aboutusimage.png";
+import laptopgroup from "../Images/laptopgroup.jpg";
+import technology from "../Images/technologyconsulting.png";
+import buysell from "../Images/buysell.jpg";
+import laptop from "../Images/laptop.jpg";
+import banknifty from "../Images/banknifty1.png";
+import itservices from "../Images/itservices.jpg";
+import petrolumpump from "../Images/petrolum.jpg";
+import aboutbg from "../Images/aboutbg1.jpg";
+import { CirlceChart } from "./ApexChart";
+import Aos from "aos";
 const About = () => {
   useEffect(() => {
     Aos.init({
@@ -14,26 +24,18 @@ const About = () => {
   });
   return (
     <div>
-      <br />
-      <br />
-      <br />
-      <br />
-
       <div
         style={{
-          backgroundImage: `url('https://assets.entrepreneur.com/content/3x2/2000/20190620104308-Examples-of-Business-Consultancy-Business-Ideas-Bigstock-4000pxW-X-2670pxH-copy.jpeg')`,
+          backgroundImage: `url('${bgabout}')`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           textAlign: "center",
-          // WebkitBorderBottomLeftRadius:"30%"
-          
         }}
         data-aos="fade-up"
-        >
+      >
         <div
           style={{
-            // WebkitBorderBottomLeftRadius:"30%",
             backgroundColor: "rgba(0,80,149,0.8)",
             height: "700px",
             display: "flex",
@@ -76,7 +78,7 @@ const About = () => {
                   make you happy in every respect
                 </p>
                 <img
-                  src="https://www.hindustanpetroleum.com/images/hpgas_chat_icon.gif"
+                  src={hpgif}
                   style={{
                     float: "left",
                     height: "150px",
@@ -87,7 +89,7 @@ const About = () => {
               </div>
               <div className="col-lg-6">
                 <img
-                  src="https://starpebindia.com/wp-content/uploads/2020/01/team.png"
+                  src={aboutusimage}
                   style={{
                     height: "500px",
                     display: "flex",
@@ -102,7 +104,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    
+
       <div
         style={{
           display: "flex",
@@ -115,94 +117,92 @@ const About = () => {
         <div style={{ width: "80%" }} className="offer1" data-aos="fade-up">
           <center>
             <h2 style={{ color: "#3373a9" }}> What We Offer*</h2>
-            <div class="loader2"></div>
+            <div className="loader2"></div>
           </center>
-            
 
-          <div className="row" style={{ marginTop: "40px" }} data-aos="fade-up">
+          {/* <div className="row" style={{ marginTop: "40px" }} data-aos="fade-up">
             <div className="col-lg-6">
               <img
-                src="https://media.istockphoto.com/id/1307557684/photo/a-business-person-who-holds-a-meeting-while-looking-at-a-computer-screen.jpg?s=612x612&w=0&k=20&c=wJ6mib_BmQBzZNj9udeM3JonbVeP1bIEieM5iWrQRAY="
+                src={laptopgroup}
                 style={{ height: "100%", width: "100%" }}
               />
             </div>
             <div className="col-lg-6">
               <h5>
-                We offer our best PEB services to our clients, We deliver our
-                best PEB products to the Clients, We provide our well qualified
-                engineers for your PEB products & services. We provide complete
-                solutions for Pre-Engineering Buildings & Industrial Civil
-                Constructional services. We offer our best PEB services to our
-                clients, We deliver our best PEB products to the Clients, We
-                provide our well qualified engineers for your PEB products &
-                services. We provide complete solutions for Pre-Engineering
-                Buildings & Industrial Civil Constructional services. We offer
-                our best PEB services to our clients, We deliver our best PEB
-                products to the Clients, We provide our well qualified engineers
-                for your PEB products & services. We provide complete solutions
-                for Pre-Engineering Buildings & Industrial Civil Constructional
-                services.
+                At Burnettbrück, our IT services and consulting arm stands as a
+                beacon of innovation and strategic guidance for businesses
+                navigating the ever-evolving technological landscape. With a
+                commitment to delivering cutting-edge solutions, we offer a
+                comprehensive suite of IT services tailored to address the
+                diverse needs of our clients. From infrastructure optimization
+                and cybersecurity fortification to software development and
+                digital transformation strategies, our consulting expertise
+                spans across the entire technological spectrum. We collaborate
+                closely with our clients, understanding their unique challenges
+                and objectives to provide customized roadmaps that streamline
+                operations, drive growth, and ensure resilience in an
+                increasingly digital world. Our team of seasoned professionals
+                is dedicated to delivering excellence, leveraging emerging
+                technologies, and fostering a seamless convergence between
+                business objectives and technological advancements
               </h5>
             </div>
           </div>
           <hr />
-          <br />
+          <br /> */}
           <div className="row" style={{ marginTop: "40px" }} data-aos="fade-up">
             <div className="col-lg-6">
-              <h5>
-                We offer our best PEB services to our clients, We deliver our
-                best PEB products to the Clients, We provide our well qualified
-                engineers for your PEB products & services. We provide complete
-                solutions for Pre-Engineering Buildings & Industrial Civil
-                Constructional services. We offer our best PEB services to our
-                clients, We deliver our best PEB products to the Clients, We
-                provide our well qualified engineers for your PEB products &
-                services. We provide complete solutions for Pre-Engineering
-                Buildings & Industrial Civil Constructional services. We offer
-                our best PEB services to our clients, We deliver our best PEB
-                products to the Clients, We provide our well qualified engineers
-                for your PEB products & services. We provide complete solutions
-                for Pre-Engineering Buildings & Industrial Civil Constructional
-                services.
+              <h5 style={{ fontSize: "18px" ,textAlign:"justify"}}>
+                At BurnettbrückData Representation The CircleChart component,
+                stands as a powerful visualization tool utilizing Google Charts
+                and ApexCharts to depict the intricate composition of our
+                business. With meticulously curated data representing distinct
+                segments—ranging from trading and consultancy to IT services and
+                architecture—the CircleChart succinctly captures the allocation
+                of resources and efforts across these pivotal domains. Through
+                its seamless integration with React, this component offers a
+                dynamic and intuitive representation, allowing stakeholders to
+                effortlessly grasp the distribution of activities within our
+                organization. Customizable features embedded within, such as
+                adjustable chart areas and pie hole sizes, empower us to tailor
+                the visualization to our specific needs. This CircleChart serves
+                not just as a visual aid but as a strategic tool, providing
+                invaluable insights into our business landscape, enabling
+                informed decision-making and fostering a deeper understanding of
+                our operational dynamics......................................
               </h5>
             </div>
             <div className="col-lg-6">
-              <img
-                src="https://www.ps3g.com/wp-content/uploads/2019/10/PS3G-Technology-Consulting.png"
-                style={{ height: "100%", width: "100%" }}
-              />
+              <CirlceChart />
             </div>
           </div>
           <hr />
           <br />
-          <div className="row" style={{ marginTop: "40px" }} data-aos="fade-up">
+          {/* <div className="row" style={{ marginTop: "40px" }} data-aos="fade-up">
             <div className="col-lg-6">
-              <img
-                src="https://img.freepik.com/premium-vector/buy-sell-stock-market-crypto-currency-trading-investment-decision-wealth-management-financial-concept-businessman-investment-analyst-holding-buy-sell-sign-with-candlestick-chart_212586-1950.jpg?w=2000"
-                style={{ height: "100%", width: "100%" }}
-              />
+              <img src={buysell} style={{ height: "100%", width: "100%" }} />
             </div>
             <div className="col-lg-6">
               <h5>
-                We offer our best PEB services to our clients, We deliver our
-                best PEB products to the Clients, We provide our well qualified
-                engineers for your PEB products & services. We provide complete
-                solutions for Pre-Engineering Buildings & Industrial Civil
-                Constructional services. We offer our best PEB services to our
-                clients, We deliver our best PEB products to the Clients, We
-                provide our well qualified engineers for your PEB products &
-                services. We provide complete solutions for Pre-Engineering
-                Buildings & Industrial Civil Constructional services. We offer
-                our best PEB services to our clients, We deliver our best PEB
-                products to the Clients, We provide our well qualified engineers
-                for your PEB products & services. We provide complete solutions
-                for Pre-Engineering Buildings & Industrial Civil Constructional
-                services.
+                At Burnettbrück, our approach to buying and selling is anchored
+                in meticulous analysis, strategic insights, and a commitment to
+                excellence. When it comes to buying, we prioritize understanding
+                the unique needs and goals of our clients. Our tailored approach
+                involves comprehensive market research, identifying optimal
+                opportunities, and executing purchases aligned with our clients'
+                objectives. On the selling front, we leverage our expertise to
+                position offerings effectively, ensuring maximum visibility and
+                value. Our strategies encompass market trends, audience
+                targeting, and innovative marketing approaches to facilitate
+                seamless transactions and optimize returns for our clients.
+                Whether it's assisting in acquisitions or facilitating sales,
+                our focus remains steadfast on delivering value-driven solutions
+                tailored to our clients' specific requirements."
               </h5>
             </div>
           </div>
           <br />
-          <br />
+          <br /> */}
         </div>
       </div>
       <div
@@ -216,19 +216,16 @@ const About = () => {
         <div>
           <center>
             <h2 style={{ color: "black", paddingTop: "20px" }}>OUR WORK</h2>
-            <br/>
+            <br />
 
-
-             <div class="loader3"></div> 
-             <br/>
+            <div className="loader3"></div>
+            <br />
 
             <b>
               <p>
                 We bring together diverse, future-facing industries and
                 communities to co-create a positive world, where one
-                <center>
-                  <p>enables the other to Rise.</p>{" "}
-                </center>
+                  <span style={{display:"block"}}>enables the other to Rise.</span>
               </p>
             </b>
           </center>
@@ -241,7 +238,7 @@ const About = () => {
           >
             <figure>
               <img
-                src="https://images.herzindagi.info/image/2023/Oct/electronic-items-online-sale.jpg"
+                src={laptop}
                 alt="Mountains"
                 className="img_cards"
                 style={{ height: "250px" }}
@@ -253,7 +250,7 @@ const About = () => {
             </figure>
             <figure style={{ c: "#fff5" }}>
               <img
-                src="https://5.imimg.com/data5/SELLER/Default/2022/8/KP/AN/CC/127147413/bank-nifty-service.png"
+                src={banknifty}
                 alt="Mountains"
                 className="img_cards"
                 style={{ height: "250px" }}
@@ -262,7 +259,7 @@ const About = () => {
             </figure>
             <figure style={{ c: "#fff5" }}>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iV8l09Hcw7UD5YobJjBL3U8gKA_Un0S8Uw&usqp=CAU"
+                src={itservices}
                 alt="Mountains"
                 className="img_cards"
                 style={{ height: "250px" }}
@@ -274,7 +271,7 @@ const About = () => {
             </figure>
             <figure style={{ c: "#fff5" }}>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_aKXcL0IbmDzkls71tHMzAguzrYf0ihGDhw&usqp=CAU"
+                src={petrolumpump}
                 alt="Mountains"
                 className="img_cards"
                 style={{ height: "250px", width: "500px" }}
@@ -291,7 +288,7 @@ const About = () => {
       <br />
       <div
         style={{
-          backgroundImage: `url('https://starpebindia.com/wp-content/uploads/2017/07/construction-image48-1-2-free-img.jpg')`,
+          backgroundImage: `url(' ${aboutbg} ')`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -316,17 +313,15 @@ const About = () => {
                   We Provide The Best Service In Industry
                 </h3>
                 <h3 style={{ color: "white" }}>
-                  We Provide All Pre-Engineering Building Solutions, You Can Get
-                  Quote Here
+                  We Provide All Solutions, You Can Get Quote Here
                 </h3>
                 <br />
 
                 <br />
 
                 <Link to="/contact" className="button-5">
-                  Contact us Today
+                  Get in Touch
                 </Link>
-                {/* <button class="button-5">Contact us Today</button> */}
               </div>
             </div>
           </div>
@@ -334,117 +329,6 @@ const About = () => {
       </div>
       <br />
       <br />
-      {/* <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="our-team">
-            <div class="pic">
-              <img src="https://starpebindia.com/wp-content/uploads/2020/01/construction-image22-5-free-img.jpg" />
-              <ul class="social" >
-                <li>
-                  <FacebookIcon  style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <TwitterIcon  style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <LinkedInIcon    style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <InstagramIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-              </ul>
-            </div>
-            <div class="team-content">
-              <div class="team-info">
-                <h3 class="title">Williamson</h3>
-                <span class="post">Web Developer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-          <div class="our-team">
-            <div class="pic">
-              <img src="https://starpebindia.com/wp-content/uploads/2020/01/construction-image22-5-free-img.jpg" />
-              <ul class="social">
-                <li>
-                  <FacebookIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <TwitterIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <LinkedInIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <InstagramIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-              </ul>
-            </div>
-            <div class="team-content">
-              <div class="team-info">
-                <h3 class="title">Kristiana</h3>
-                <span class="post">Web Designer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="our-team">
-            <div class="pic">
-              <img src="https://starpebindia.com/wp-content/uploads/2020/01/construction-image22-5-free-img.jpg" />
-              <ul class="social">
-                <li>
-                  <FacebookIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <TwitterIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <LinkedInIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <InstagramIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-              </ul>
-            </div>
-            <div class="team-content">
-              <div class="team-info">
-                <h3 class="title">Kristiana</h3>
-                <span class="post">Web Designer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="our-team">
-            <div class="pic">
-              <img src="https://starpebindia.com/wp-content/uploads/2020/01/construction-image22-5-free-img.jpg" />
-              <ul class="social">
-                <li>
-                  <FacebookIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <TwitterIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <LinkedInIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-                <li>
-                  <InstagramIcon   style={{ color: "White" ,display:"flex",justifyContent:"center",alignItems:"center",marginLeft:"50px"}}/>
-                </li>
-              </ul>
-            </div>
-            <div class="team-content">
-              <div class="team-info">
-                <h3 class="title">Kristiana</h3>
-                <span class="post">Web Designer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <Footer />
     </div>
   );
