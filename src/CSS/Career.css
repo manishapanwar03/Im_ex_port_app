@@ -14,3 +14,16 @@
       width: 100%;
     }
   }
+
+  .ResumeMain .share {
+    font-size: 24px;
+    color: black;
+  }
+  .ResumeMain .team {
+    color: black;
+    font-size: 25px;
+  }
+  .ResumeMain .team1 {
+    color:black ;
+    font-size: 17px;
+  }

@@ -7,104 +7,111 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
- 
-
   return (
     <>
       <div>
         <nav
-          class="navbar navbar-expand-lg  fixed-top  "
+          className="navbar navbar-expand-lg"
           style={{
             width: "100%",
+            position: "fixed",
             backgroundColor: "whitesmoke",
             color: "black",
             height: "100px",
+            zIndex: 1,
           }}
         >
-          {/* <br/> */}
           <div
             className="col-lg-4
-             col-md-6 col-sm-12"
+             col-md-6 col-sm-12 navbar-brand1"
           >
-            <a
+            {/* <a
               href="#"
-              class="navbar-brand1"
+              className="navbar-brand1"
               style={{ textDecoration: "none" }}
-            >
-             
-              <h3>Burnettbrück </h3>
+            > */}
+              <Link to="/" target="_top" className="text-reset">
+                <h3>Burnettbrück </h3>
+                <h3 style={{ color: "#4b505e", fontSize: "15px" }}>PVT LTD</h3>
+              </Link>
               <button
                 type="button"
-                class="navbar-toggler"
+                className="navbar-toggler"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
-            </a>
+            {/* </a>   */}
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 navbar_middle">
             <div
-              class="collapse navbar-collapse justify-content-between"
+              className="collapse navbar-collapse justify-content-between"
               id="navbarCollapse"
             >
-              <div class="navbar-nav">
-                <a href="/" class="button-6">
+              <div className="navbar-nav">
+                <Link to="/" target="_top" className="button-6">
                   HOME
-                </a>
-                
-                <Link to="/about" className="button-6">
+                </Link>
+
+                <Link to="/about" target="_top" className="button-6">
                   ABOUT US
                 </Link>
 
-                <div class="nav-item dropdown ">
-                  <a
+                <div className="dropdown">
+                    <a
                     href="#"
-                    class="nav dropdown-toggle button-6"
-                    data-bs-toggle="dropdown"
+                    className="nav dropdown-toggle button-6"
+                  
                     style={{ color: "rgba(0, 0, 0, 0.85)" }}
                   >
                     BUSINESS
                   </a>
-                  <div class="dropdown-menu  navbar-brand">
-                    <Link to="/trading" className="text-reset">
+                  <div className="dropdown-menu  navbar- dropdown-options" > 
+                    <Link to="/trading" target="_top"  className="link" >
                       Burnettbrück Trading and services
-                    </Link>
                     <br />
-                    <Link to="/stock" className="text-reset">
+                    </Link>
+                    <Link to="/stock" target="_top"  className="link"   >
                       Burnettbrück Stock market consultant
                       <br />
                     </Link>
 
-                    <Link to="/services" className="text-reset">
+                    <Link to="/services" target="_top"  className="link"  >
                       Burnettbrück IT Services and consulting
                       <br />
                     </Link>
 
-                    <Link to="/petrolum" className="text-reset">
+                    <Link to="/petrolum" target="_top"   className="link" >
                       Burnettbrück Fabrication and Architecture Designing
                     </Link>
                   </div>
                 </div>
 
-                <Link to="/career" className="button-6">
+                <Link to="/career" target="_top" className="button-6">
                   CAREER
                 </Link>
-                <Link to="/contact" className="button-6">
-                  Contact
+                <Link to="/contact" target="_top" className="button-6">
+                  CONTACT
                 </Link>
               </div>
             </div>
           </div>
           <div className="col-lg-2 col-sm-12 col-md-12">
             <div className="icons_mui">
-             <a href="#" style={{color:"gray"}}><FacebookIcon  /> </a> 
-             <a href="#" style={{color:"gray"}}> <TwitterIcon />
+              <a href="#" style={{ color: "gray" }}>
+                <FacebookIcon />{" "}
               </a>
-             <a href="#" style={{color:"gray"}}><InstagramIcon />
-              </a> 
-            <a href="#" style={{color:"gray"}}><LinkedInIcon />
-              </a>  
+              <a href="#" style={{ color: "gray" }}>
+                {" "}
+                <TwitterIcon />
+              </a>
+              <a href="#" style={{ color: "gray" }}>
+                <InstagramIcon />
+              </a>
+              <a href="#" style={{ color: "gray" }}>
+                <LinkedInIcon />
+              </a>
             </div>
 
             <div color="gray" style={{ fontSize: "13px", paddingTop: "10px" }}>

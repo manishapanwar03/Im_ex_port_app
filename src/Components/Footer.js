@@ -1,15 +1,11 @@
 import React from "react";
 import "../CSS/Footer.css";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import WifiCalling3OutlinedIcon from "@mui/icons-material/WifiCalling3Outlined";
 import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 
 import {
   MDBFooter,
-  MDBContainer,
   MDBRow,
   MDBCol,
   MDBIcon,
@@ -48,13 +44,13 @@ const Footer = () => {
         </section>
 
         <section className="">
-          {/* <MDBContainer className="text-center text-md-start mt-5"> */}
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-              <h6 className=" fw-bold mb-4 " style={{ fontSize: "20px" }}>
-                {/* <MDBIcon color="secondary" icon="gem" className="me-3" /> */}
-                Burnettbrück
-              </h6>
+              <a href="/" className="text-reset">
+                <h6 className=" fw-bold mb-4 " style={{ fontSize: "20px" }}>
+                  Burnettbrück
+                </h6>
+              </a>
               <p>
                 Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -64,22 +60,23 @@ const Footer = () => {
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <Link to="/trading" className="text-reset">
-                Burnettbrück Trading and services
+              <Link to="/trading" target="_top" className="text-reset">
+                Trading and services
               </Link>
               <br />
-              <Link to="/stock" className="text-reset">
-                Burnettbrück Stock market consultant
+              
+              <Link to="/stock" target="_top"  className="text-reset">
+                Stock market consultant
                 <br />
               </Link>
 
-              <Link to="/services" className="text-reset">
-                Burnettbrück IT Services and consulting
+              <Link to="/services" target="_top"  className="text-reset">
+                IT Services and consulting
                 <br />
               </Link>
 
-              <Link to="/petrolum" className="text-reset">
-                Burnettbrück Fabrication and Architecture Designing
+              <Link to="/petrolum" target="_top"  className="text-reset">
+                Fabrication and Architecture Designing
               </Link>
             </MDBCol>
 
@@ -101,9 +98,9 @@ const Footer = () => {
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/contact" className="text-reset">
                   Help
-                </a>
+                </Link>
               </p>
             </MDBCol>
 
@@ -111,14 +108,18 @@ const Footer = () => {
               <h5>Contact Info</h5>
               <div className="contact_info">
                 <p style={{ display: "flex" }}>
-                  <LocationOnOutlinedIcon
-                    className="icon"
-                    style={{ marginTop: "4px" }}
-                  />{" "}
+                  <a href="" className="text-reset">
+                    <LocationOnOutlinedIcon
+                      className="icon"
+                      style={{ marginTop: "4px" }}
+                    />
+                  </a>
                   <span style={{ marginLeft: "5px" }}>
+                    <a href="https://maps.app.goo.gl/Yn24EnrqawSPk8qX9" style={{textDecoration:"none",color:"gray"}}>
                     388, 1st Floor, Pu4, Scheme Number 54, In front of Retina
                     Speciality Hospital, Vijay Nagar, Indore, Madhya Pradesh,
                     452010
+                    </a>
                   </span>
                 </p>
                 <p style={{ display: "flex" }}>
@@ -126,27 +127,26 @@ const Footer = () => {
                     className="icon"
                     style={{ marginTop: "4px" }}
                   />
-                  <p href="tel:+919425960946">
+                  <span href="tel:+919425960946">
                     <span style={{ marginLeft: "10px", color: "gray" }}>
                       +91 9425960946
                     </span>
-                  </p>
+                  </span>
                 </p>
                 <p style={{ display: "flex" }}>
-                  <DraftsOutlinedIcon
-                    className="icon"
-                    style={{ marginTop: "4px" }}
-                  />
-                  <pf href="mailto:hr@bridgefix.co">
+                  <a href="mailto:hr@burnettbrück.co" className="text-reset">
+                    <DraftsOutlinedIcon
+                      className="icon"
+                      style={{ marginTop: "4px" }}
+                    />
                     <span style={{ marginLeft: "10px", color: "gray" }}>
                       hr@burnettbrück.co
                     </span>
-                  </pf>
+                  </a>
                 </p>
               </div>
             </div>
           </MDBRow>
-          {/* </MDBContainer> */}
         </section>
       </MDBFooter>
     </div>

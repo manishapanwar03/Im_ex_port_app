@@ -4,9 +4,9 @@
     margin-right: 20px;
     margin-top: 30px;
     /* padding-left: 20px; */
-    height: 230px;
+    height: 250px;
     padding-top: 20px;
-    width: 250px;
+    width: 300px;
     padding: 10px;
     border-radius: 10%;
     
@@ -14,9 +14,9 @@
   }
   .images_1:hover {
     padding-left: 20px;
-    height: 230px;
+    height: 250px;
     padding-top: 20px;
-    width: 250px;
+    width: 300px;
     padding: 10px;
     border-radius: 50%;
   }
