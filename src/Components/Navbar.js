@@ -99,24 +99,24 @@ const Navbar = () => {
           </div>
           <div className="col-lg-2 col-sm-12 col-md-12">
             <div className="icons_mui">
-              <a href="#" style={{ color: "gray" }}>
+              <Link href="#" style={{ color: "gray" }}>
                 <FacebookIcon />{" "}
-              </a>
-              <a href="#" style={{ color: "gray" }}>
+              </Link>
+              <Link href="#" style={{ color: "gray" }}>
                 {" "}
                 <TwitterIcon />
-              </a>
-              <a href="#" style={{ color: "gray" }}>
+              </Link>
+              <Link href="#" style={{ color: "gray" }}>
                 <InstagramIcon />
-              </a>
-              <a href="#" style={{ color: "gray" }}>
+              </Link>
+              <Link href="#" style={{ color: "gray" }}>
                 <LinkedInIcon />
-              </a>
+              </Link>
             </div>
 
             <div color="gray" style={{ fontSize: "13px", paddingTop: "10px" }}>
               CALL: 0755-2423736 |
-              <a
+              <Link
                 href="#"
                 style={{
                   color: "black",
@@ -125,7 +125,7 @@ const Navbar = () => {
                 }}
               >
                 WORK WITH US
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

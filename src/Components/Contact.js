@@ -144,6 +144,13 @@ export default function Contact() {
             </Grid>
           </Grid>
           <br/>
+
+          <div className="col-lg-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d7358.9310805554!2d75.8935003!3d22.7480983!3m2!1i1024!2i768!4f13.1!2m1!1s388%2C%201st%20Floor%2C%20Pu4%2C%20Scheme%20Number%2054%2C%20In%20front%20of%20Retina%20Speciality%20Hospital%2C%20Vijay%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%2C%20452010!5e0!3m2!1sen!2sin!4v1703151059024!5m2!1sen!2sin" width="1200" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+          <br/>
+          <br/>
           
         </Container>
       </div>
