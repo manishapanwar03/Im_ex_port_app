@@ -87,7 +87,7 @@ export default function Contact() {
                     margin="normal"
                     required
                     fullWidth
-                    id="email"
+                    id="name"
                     label="Name"
                     name="email"
                     autoComplete="email"
@@ -143,8 +143,12 @@ export default function Contact() {
               </Box>
             </Grid>
           </Grid>
+          <br/>
+          
         </Container>
       </div>
+     
+
       <Footer />
     </>
   );

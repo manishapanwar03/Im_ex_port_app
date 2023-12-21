@@ -17,6 +17,9 @@ import aboutbg from "../Images/aboutbg1.jpg";
 import { CirlceChart } from "./ApexChart";
 import Aos from "aos";
 const About = () => {
+
+
+  
   useEffect(() => {
     Aos.init({
       duration: 1200,
